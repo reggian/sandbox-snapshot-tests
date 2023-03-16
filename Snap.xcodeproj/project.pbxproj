@@ -17,6 +17,8 @@
 		E182EE1B29C3635E00DFA535 /* SnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE1A29C3635E00DFA535 /* SnapUITests.swift */; };
 		E182EE1D29C3635E00DFA535 /* SnapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE1C29C3635E00DFA535 /* SnapUITestsLaunchTests.swift */; };
 		E182EE3A29C368DC00DFA535 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE3929C368DC00DFA535 /* SnapshotTests.swift */; };
+		E182EE4229C3696800DFA535 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */; };
+		E182EE4629C36EEA00DFA535 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		E182EE3229C367FA00DFA535 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E182EE3729C368DC00DFA535 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182EE3929C368DC00DFA535 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
+		E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
+		E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,9 +200,19 @@
 		E182EE3829C368DC00DFA535 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				E182EE4029C3694C00DFA535 /* Helpers */,
 				E182EE3929C368DC00DFA535 /* SnapshotTests.swift */,
 			);
 			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		E182EE4029C3694C00DFA535 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */,
+				E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182EE4629C36EEA00DFA535 /* XCTestCase+Snapshot.swift in Sources */,
+				E182EE4229C3696800DFA535 /* UIViewController+Snapshot.swift in Sources */,
 				E182EE3A29C368DC00DFA535 /* SnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
