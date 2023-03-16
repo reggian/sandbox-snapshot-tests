@@ -44,11 +44,13 @@
 		E182EE0229C3635E00DFA535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E182EE0529C3635E00DFA535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E182EE0729C3635E00DFA535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E182EE0C29C3635E00DFA535 /* SnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182EE0C29C3635E00DFA535 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182EE1029C3635E00DFA535 /* SnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapTests.swift; sourceTree = "<group>"; };
-		E182EE1629C3635E00DFA535 /* SnapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182EE1629C3635E00DFA535 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182EE1A29C3635E00DFA535 /* SnapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapUITests.swift; sourceTree = "<group>"; };
 		E182EE1C29C3635E00DFA535 /* SnapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E182EE3129C367FA00DFA535 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E182EE3229C367FA00DFA535 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,52 +81,97 @@
 		E182EDED29C3635D00DFA535 = {
 			isa = PBXGroup;
 			children = (
-				E182EDF829C3635D00DFA535 /* Snap */,
-				E182EE0F29C3635E00DFA535 /* SnapTests */,
-				E182EE1929C3635E00DFA535 /* SnapUITests */,
+				E182EDF829C3635D00DFA535 /* App */,
+				E182EE2A29C3658200DFA535 /* Tests */,
+				E182EE3029C367EA00DFA535 /* Supporting */,
 				E182EDF729C3635D00DFA535 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		E182EDF729C3635D00DFA535 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E182EDF629C3635D00DFA535 /* Snap.app */,
-				E182EE0C29C3635E00DFA535 /* SnapTests.xctest */,
-				E182EE1629C3635E00DFA535 /* SnapUITests.xctest */,
+				E182EE0C29C3635E00DFA535 /* UnitTests.xctest */,
+				E182EE1629C3635E00DFA535 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E182EDF829C3635D00DFA535 /* Snap */ = {
+		E182EDF829C3635D00DFA535 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E182EDF929C3635D00DFA535 /* AppDelegate.swift */,
-				E182EDFB29C3635D00DFA535 /* SceneDelegate.swift */,
-				E182EDFD29C3635D00DFA535 /* ViewController.swift */,
-				E182EDFF29C3635D00DFA535 /* Main.storyboard */,
-				E182EE0229C3635E00DFA535 /* Assets.xcassets */,
-				E182EE0429C3635E00DFA535 /* LaunchScreen.storyboard */,
-				E182EE0729C3635E00DFA535 /* Info.plist */,
+				E182EE2D29C3678B00DFA535 /* Main */,
+				E182EE2E29C3679200DFA535 /* UI */,
+				E182EE2F29C367DC00DFA535 /* Supporting */,
 			);
-			path = Snap;
+			path = App;
 			sourceTree = "<group>";
 		};
-		E182EE0F29C3635E00DFA535 /* SnapTests */ = {
+		E182EE0F29C3635E00DFA535 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				E182EE1029C3635E00DFA535 /* SnapTests.swift */,
 			);
-			path = SnapTests;
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		E182EE1929C3635E00DFA535 /* SnapUITests */ = {
+		E182EE1929C3635E00DFA535 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
 				E182EE1A29C3635E00DFA535 /* SnapUITests.swift */,
 				E182EE1C29C3635E00DFA535 /* SnapUITestsLaunchTests.swift */,
 			);
-			path = SnapUITests;
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		E182EE2A29C3658200DFA535 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE0F29C3635E00DFA535 /* UnitTests */,
+				E182EE1929C3635E00DFA535 /* UITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E182EE2D29C3678B00DFA535 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E182EDF929C3635D00DFA535 /* AppDelegate.swift */,
+				E182EDFB29C3635D00DFA535 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E182EE2E29C3679200DFA535 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E182EDFD29C3635D00DFA535 /* ViewController.swift */,
+				E182EE0429C3635E00DFA535 /* LaunchScreen.storyboard */,
+				E182EDFF29C3635D00DFA535 /* Main.storyboard */,
+				E182EE0229C3635E00DFA535 /* Assets.xcassets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E182EE2F29C367DC00DFA535 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE0729C3635E00DFA535 /* Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		E182EE3029C367EA00DFA535 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE3229C367FA00DFA535 /* LICENSE */,
+				E182EE3129C367FA00DFA535 /* README.md */,
+			);
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +194,9 @@
 			productReference = E182EDF629C3635D00DFA535 /* Snap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E182EE0B29C3635E00DFA535 /* SnapTests */ = {
+		E182EE0B29C3635E00DFA535 /* UnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E182EE2329C3635E00DFA535 /* Build configuration list for PBXNativeTarget "SnapTests" */;
+			buildConfigurationList = E182EE2329C3635E00DFA535 /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
 				E182EE0829C3635E00DFA535 /* Sources */,
 				E182EE0929C3635E00DFA535 /* Frameworks */,
@@ -160,14 +207,14 @@
 			dependencies = (
 				E182EE0E29C3635E00DFA535 /* PBXTargetDependency */,
 			);
-			name = SnapTests;
+			name = UnitTests;
 			productName = SnapTests;
-			productReference = E182EE0C29C3635E00DFA535 /* SnapTests.xctest */;
+			productReference = E182EE0C29C3635E00DFA535 /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E182EE1529C3635E00DFA535 /* SnapUITests */ = {
+		E182EE1529C3635E00DFA535 /* UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E182EE2629C3635E00DFA535 /* Build configuration list for PBXNativeTarget "SnapUITests" */;
+			buildConfigurationList = E182EE2629C3635E00DFA535 /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
 				E182EE1229C3635E00DFA535 /* Sources */,
 				E182EE1329C3635E00DFA535 /* Frameworks */,
@@ -178,9 +225,9 @@
 			dependencies = (
 				E182EE1829C3635E00DFA535 /* PBXTargetDependency */,
 			);
-			name = SnapUITests;
+			name = UITests;
 			productName = SnapUITests;
-			productReference = E182EE1629C3635E00DFA535 /* SnapUITests.xctest */;
+			productReference = E182EE1629C3635E00DFA535 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -220,8 +267,8 @@
 			projectRoot = "";
 			targets = (
 				E182EDF529C3635D00DFA535 /* Snap */,
-				E182EE0B29C3635E00DFA535 /* SnapTests */,
-				E182EE1529C3635E00DFA535 /* SnapUITests */,
+				E182EE0B29C3635E00DFA535 /* UnitTests */,
+				E182EE1529C3635E00DFA535 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,6 +396,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -367,12 +415,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -409,6 +459,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -421,12 +472,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -436,9 +489,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Snap/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -448,7 +500,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -463,9 +514,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Snap/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -475,7 +525,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -490,11 +539,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.SnapTests;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -509,11 +556,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.SnapTests;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -527,10 +572,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.SnapUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -544,10 +587,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.SnapUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -577,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E182EE2329C3635E00DFA535 /* Build configuration list for PBXNativeTarget "SnapTests" */ = {
+		E182EE2329C3635E00DFA535 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E182EE2429C3635E00DFA535 /* Debug */,
@@ -586,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E182EE2629C3635E00DFA535 /* Build configuration list for PBXNativeTarget "SnapUITests" */ = {
+		E182EE2629C3635E00DFA535 /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E182EE2729C3635E00DFA535 /* Debug */,
