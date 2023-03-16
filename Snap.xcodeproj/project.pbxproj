@@ -16,6 +16,10 @@
 		E182EE1129C3635E00DFA535 /* SnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE1029C3635E00DFA535 /* SnapTests.swift */; };
 		E182EE1B29C3635E00DFA535 /* SnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE1A29C3635E00DFA535 /* SnapUITests.swift */; };
 		E182EE1D29C3635E00DFA535 /* SnapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE1C29C3635E00DFA535 /* SnapUITestsLaunchTests.swift */; };
+		E182EE3A29C368DC00DFA535 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE3929C368DC00DFA535 /* SnapshotTests.swift */; };
+		E182EE4229C3696800DFA535 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */; };
+		E182EE4629C36EEA00DFA535 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */; };
+		E182EE4829C3740F00DFA535 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4729C3740F00DFA535 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,13 @@
 			remoteInfo = Snap;
 		};
 		E182EE1729C3635E00DFA535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182EDEE29C3635D00DFA535 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182EDF529C3635D00DFA535;
+			remoteInfo = Snap;
+		};
+		E182EE3B29C368DC00DFA535 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E182EDEE29C3635D00DFA535 /* Project object */;
 			proxyType = 1;
@@ -51,6 +62,11 @@
 		E182EE1C29C3635E00DFA535 /* SnapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E182EE3129C367FA00DFA535 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E182EE3229C367FA00DFA535 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E182EE3729C368DC00DFA535 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182EE3929C368DC00DFA535 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
+		E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
+		E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
+		E182EE4729C3740F00DFA535 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E182EE1329C3635E00DFA535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182EE3429C368DC00DFA535 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +120,7 @@
 				E182EDF629C3635D00DFA535 /* Snap.app */,
 				E182EE0C29C3635E00DFA535 /* UnitTests.xctest */,
 				E182EE1629C3635E00DFA535 /* UITests.xctest */,
+				E182EE3729C368DC00DFA535 /* SnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E182EE0F29C3635E00DFA535 /* UnitTests */,
+				E182EE3829C368DC00DFA535 /* SnapshotTests */,
 				E182EE1929C3635E00DFA535 /* UITests */,
 			);
 			path = Tests;
@@ -149,6 +174,7 @@
 		E182EE2E29C3679200DFA535 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E182EE4729C3740F00DFA535 /* ContainerViewController.swift */,
 				E182EDFD29C3635D00DFA535 /* ViewController.swift */,
 				E182EE0429C3635E00DFA535 /* LaunchScreen.storyboard */,
 				E182EDFF29C3635D00DFA535 /* Main.storyboard */,
@@ -172,6 +198,24 @@
 				E182EE3129C367FA00DFA535 /* README.md */,
 			);
 			name = Supporting;
+			sourceTree = "<group>";
+		};
+		E182EE3829C368DC00DFA535 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE4029C3694C00DFA535 /* Helpers */,
+				E182EE3929C368DC00DFA535 /* SnapshotTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		E182EE4029C3694C00DFA535 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */,
+				E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +274,24 @@
 			productReference = E182EE1629C3635E00DFA535 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E182EE3629C368DC00DFA535 /* SnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182EE3F29C368DD00DFA535 /* Build configuration list for PBXNativeTarget "SnapshotTests" */;
+			buildPhases = (
+				E182EE3329C368DC00DFA535 /* Sources */,
+				E182EE3429C368DC00DFA535 /* Frameworks */,
+				E182EE3529C368DC00DFA535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E182EE3C29C368DC00DFA535 /* PBXTargetDependency */,
+			);
+			name = SnapshotTests;
+			productName = SnapshotTests;
+			productReference = E182EE3729C368DC00DFA535 /* SnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +313,10 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = E182EDF529C3635D00DFA535;
 					};
+					E182EE3629C368DC00DFA535 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E182EDF529C3635D00DFA535;
+					};
 				};
 			};
 			buildConfigurationList = E182EDF129C3635D00DFA535 /* Build configuration list for PBXProject "Snap" */;
@@ -268,6 +334,7 @@
 			targets = (
 				E182EDF529C3635D00DFA535 /* Snap */,
 				E182EE0B29C3635E00DFA535 /* UnitTests */,
+				E182EE3629C368DC00DFA535 /* SnapshotTests */,
 				E182EE1529C3635E00DFA535 /* UITests */,
 			);
 		};
@@ -298,6 +365,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182EE3529C368DC00DFA535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -307,6 +381,7 @@
 			files = (
 				E182EDFE29C3635D00DFA535 /* ViewController.swift in Sources */,
 				E182EDFA29C3635D00DFA535 /* AppDelegate.swift in Sources */,
+				E182EE4829C3740F00DFA535 /* ContainerViewController.swift in Sources */,
 				E182EDFC29C3635D00DFA535 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +403,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182EE3329C368DC00DFA535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182EE4629C36EEA00DFA535 /* XCTestCase+Snapshot.swift in Sources */,
+				E182EE4229C3696800DFA535 /* UIViewController+Snapshot.swift in Sources */,
+				E182EE3A29C368DC00DFA535 /* SnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -340,6 +425,11 @@
 			isa = PBXTargetDependency;
 			target = E182EDF529C3635D00DFA535 /* Snap */;
 			targetProxy = E182EE1729C3635E00DFA535 /* PBXContainerItemProxy */;
+		};
+		E182EE3C29C368DC00DFA535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182EDF529C3635D00DFA535 /* Snap */;
+			targetProxy = E182EE3B29C368DC00DFA535 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -597,6 +687,40 @@
 			};
 			name = Release;
 		};
+		E182EE3D29C368DD00DFA535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.SnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Snap";
+			};
+			name = Debug;
+		};
+		E182EE3E29C368DD00DFA535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = reggian.sandbox.Snap.SnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Snap";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,6 +756,15 @@
 			buildConfigurations = (
 				E182EE2729C3635E00DFA535 /* Debug */,
 				E182EE2829C3635E00DFA535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182EE3F29C368DD00DFA535 /* Build configuration list for PBXNativeTarget "SnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182EE3D29C368DD00DFA535 /* Debug */,
+				E182EE3E29C368DD00DFA535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
