@@ -19,6 +19,7 @@
 		E182EE3A29C368DC00DFA535 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE3929C368DC00DFA535 /* SnapshotTests.swift */; };
 		E182EE4229C3696800DFA535 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */; };
 		E182EE4629C36EEA00DFA535 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */; };
+		E182EE4829C3740F00DFA535 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182EE4729C3740F00DFA535 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		E182EE3929C368DC00DFA535 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 		E182EE4129C3696800DFA535 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
 		E182EE4529C36EEA00DFA535 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
+		E182EE4729C3740F00DFA535 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		E182EE2E29C3679200DFA535 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E182EE4729C3740F00DFA535 /* ContainerViewController.swift */,
 				E182EDFD29C3635D00DFA535 /* ViewController.swift */,
 				E182EE0429C3635E00DFA535 /* LaunchScreen.storyboard */,
 				E182EDFF29C3635D00DFA535 /* Main.storyboard */,
@@ -378,6 +381,7 @@
 			files = (
 				E182EDFE29C3635D00DFA535 /* ViewController.swift in Sources */,
 				E182EDFA29C3635D00DFA535 /* AppDelegate.swift in Sources */,
+				E182EE4829C3740F00DFA535 /* ContainerViewController.swift in Sources */,
 				E182EDFC29C3635D00DFA535 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
